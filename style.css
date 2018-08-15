@@ -367,3 +367,11 @@ li{
   font-weight: 400;
   font-style: normal;
 }
+
+a[href]{
+  text-decoration: none;
+  color: #444;
+}
+a[href]:hover{
+  text-decoration: underline;
+}
