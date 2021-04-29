@@ -22,7 +22,7 @@
 1. Click "Use this template" on the [Beyond Code Resume repo](https://github.com/BeyondCodeBootcamp/html-resume)
 2. Use [git](https://webinstall.dev/git/) to download this project (or get the [zip](https://github.com/BeyondCodeBootcamp/html-resume/archive/refs/heads/main.zip) and find the dependencies)
    ```bash
-   git clone --recursive git@github.com:BeyondCodeBootcamp/html-resume.git
+   git clone --recursive --shallow-submodules --depth=1 git@github.com:BeyondCodeBootcamp/html-resume.git
    ```
 3. Preview `html-resume/` in your browser
    - macOS: `open html-resume/index.html`
