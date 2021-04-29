@@ -2,6 +2,8 @@
 
 > A Stand-Out, easy-to-edit, classy resume template that's perfect for your website, blog, and job-application PDF uploads.
 
+[![](/examples/john-doe-resume-preview.png)](/examples/john-doe-resume.png)
+
 ## Features
 
 - [x] Sleek, Professional, Classy
@@ -14,8 +16,6 @@
 
 - [AJ ONeal (html)](https://coolaj86.com/resume/)
 - [Min-Zhong "John" Lu (pdf)](https://mnjul.net/cv/resume.pdf)
-
-[![](/examples/john-doe-resume-preview.png)](/examples/john-doe-resume.png)
 
 ## Make Your Own
 
