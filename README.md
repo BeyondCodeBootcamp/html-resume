@@ -22,7 +22,7 @@
 1. Click "Use this template" on the [Beyond Code Resume repo](https://github.com/BeyondCodeBootcamp/html-resume)
 2. Use [git](https://webinstall.dev/git/) to download this project (or get the [zip](https://github.com/BeyondCodeBootcamp/html-resume/archive/refs/heads/main.zip) and find the dependencies)
    ```bash
-   git clone --recursive --shallow-submodules --depth=1 git@github.com:BeyondCodeBootcamp/html-resume.git
+   git clone --recursive --shallow-submodules --depth=1 https://github.com/BeyondCodeBootcamp/html-resume.git
    ```
 3. Preview `html-resume/` in your browser
    - macOS: `open html-resume/index.html`
@@ -34,6 +34,17 @@
 Use [VS Code](https://code.visualstudio.com) [+ Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 or [vim + Prettier](https://webinstall.dev/vim-essential)
 to edit `index.html` and `style.css` and season to taste.
+
+For reference, this is how I would clone this repository so that I can `git push` to it:
+
+```bash
+git clone ssh://git@github.com/BeyondCodeBootcamp/html-resume.git
+pushd html-resume/
+git submodule init
+git submodule update --recursive --depth=1
+```
+
+I show the other example above because it's just one line, but you won't be able to `git commit` and `git push` changes.
 
 # Tips
 
