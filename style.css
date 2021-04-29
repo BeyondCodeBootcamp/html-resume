@@ -356,7 +356,7 @@ h2 {
   padding: 0;
 }
 
-#disclaimer {
+.acknowledgement {
   position: absolute;
   bottom: var(--sidebar-horizontal-padding);
   right: var(--sidebar-horizontal-padding);
@@ -367,7 +367,7 @@ h2 {
   color: #777;
 }
 
-#disclaimer code {
+.acknowledgement code {
   color: #666;
   font-family: "Source Code Pro";
   font-weight: 400;
@@ -398,4 +398,7 @@ body > * {
 }
 #sidebar {
   height: var(--page-height);
+}
+.noprint {
+  background-color: grey;
 }

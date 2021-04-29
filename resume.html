@@ -4,7 +4,12 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="dep/normalize.css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="dep/Font-Awesome/css/font-awesome.css" />
+    <!-- todo: use a local copy of Google Fonts for offline viewing -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
   </head>
   <body lang="en">
     <section id="main">
@@ -221,9 +226,28 @@
           <li>No name rights</li>
         </ul>
       </div>
-      <div class="side-block" id="disclaimer">
-        This r&eacute;sum&eacute; was wholly typeset with HTML/CSS &mdash; see <code>git.io/vVSYL</code>
+      <!--
+          We leave this acknowledgement here for our examples, so that
+          we can quickly uncomment it, but feel free to remove it entirely.
+      -->
+      <!--
+      <div class="side-block" class="acknowledgement">
+        This is Print-to-PDF HTML R&eacute;sum&eacute; template is Open Source. Make your own at
+        <code
+          ><a href="https://github.com/BeyondCodeBootcamp/html-resume">github.com/BeyondCodeBootcamp/html-resume</a
+          >.</code
+        >
       </div>
+      -->
     </aside>
+    <div class="noprint">
+      <center>
+        <div style="height: 2em">
+          &nbsp;
+          <br />
+          <button onclick="window.print();">Save as PDF</button>
+        </div>
+      </center>
+    </div>
   </body>
 </html>
