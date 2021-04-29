@@ -1,42 +1,74 @@
-# html-resume
-A single-page résumé template done purely with HTML and CSS, which can be rendered into PDF through web browsers' print-to-PDF functionality, making a nice, sleek, professsional and ready-to-print résumé. See my living example at: https://mnjul.net/cv/resume.pdf
+# Print-to-PDF HTML Resume Template
 
-As the résumé is purely typeset with HTML and CSS, it's highly customizable (e.g. if you want an "objective" section, just copy-paste a few HTML elements) and does not require proprietary software. All you need is a text editor and a web browser (see compatibility section below). Oh, maybe some intermediate CSS knowledge. And, since it's open source with Apache License, you're allowed (and encouraged!) to create your own fine-tuned template and share with others.
+> A Stand-Out, easy-to-edit, classy resume template that's perfect for your website, blog, and job-application PDF uploads.
 
-Find the background story of this project at [my blog](https://blogs.purincess.tw/matrixblog/2016/04/typesetting-resume-with-html-and-css/).
+## Features
 
-# Compatibility and Known Issues/Limitations
-* I have only tested this project on latest release version of Firefox (56 as of writing) and Google Chrome (61) on macOS 10.13 (High Sierra).
-* It's my intention to support other browsers/platforms (like IE Edge on Windows?) as long as the browser sufficiently supports the required CSS features: ``calc()``, ``var()``, ``flexbox``, ...etc, and does not require (too many) dirty tricks. PRs or comments welcome!
-* **No hyperlinking functionality in rendered PDF** as browers's print-to-PDF process is merely "flattening to digital paper".
-* Other browser-specific hacks are as commented in the code.
+- [x] Sleek, Professional, Classy
+- [x] Vanilla HTML & CSS
+- [x] Print-to-PDF
+- [x] Renders properly in "Evergreen" browsers since 2016
+- [x] Copy, Paste, Customize
 
-# Fonts, Icon Fonts, and Dependencies
-* [Open Sans](https://www.google.com/fonts/specimen/Open+Sans), [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) and [Source Sans Pro](https://www.google.com/fonts/specimen/Source+Sans+Pro) are used at various weights, but are not included in this repository. Please follow the links to download the fonts onto your computer.
-* Icons from [Font Awesome](https://fortawesome.github.io/Font-Awesome/) are used and are incorporated as a git submodule in this repository.
-* [Normalize.css](https://necolas.github.io/normalize.css/) is used and is incorporated as a git submodule in this repository.
+## Examples
 
-# Paper Size/Orientation
-* Currently letter portrait only. PRs welcome for other paper sizes --- especially A4!
+- [AJ ONeal (html)](https://coolaj86.com/resume/)
+- [Min-Zhong "John" Lu (pdf)](https://mnjul.net/cv/resume.pdf)
 
-# Actually Rendering the PDF
-* Again...I've only tried on the said version of Firefox & Chrome, on macOS.
-* Just open the HTML file with the browser. No need to serve the document from any kind of web server --- the ``file:///`` protocol should be good enough.
-* On Firefox:
-  * You probably need to remove any page margins in **about:config**.
-  * Uncheck **Ignore Scaling and Shrink To Fit Page Width**.
-  * Check **Print Background Colors**.
-  * Clear out the headers and footers.
-  * Save as PDF.
-* On Google Chrome:
-  * Set **Margin** to **None**.
-  * Print **Background Graphics**.
-  * Don't print headers and footers.
-  * Save as PDF.
+[![](/examples/john-doe-resume-preview.png)](/examples/john-doe-resume.png)
 
-# Footnotes and License
-* If you ever print out the rendered PDF, make sure texts are not clipped off, or items have not unexpectedly shrunk. Additionally, since the PDF has no margin outside the shaded sidebar, while most printers have no-print areas, the shaded sidebar probably won't fill up to the page's edge when printed.
-* This project is licensed under the Apache License.
-* PR, forks and other comments/suggestions are, as always, super welcome.
-* Feel free to remove the ``#disclaimer`` block which links back to this repository --- but huge thanks if you decide to keep it.
-* The layout/design was inspired by Paolo Zupin. Also, if anyone knows which link I should put under Mr. Zupin's name, please tell me!
+## Make Your Own
+
+1. Click "Use this template" on the [Beyond Code Resume repo](https://github.com/BeyondCodeBootcamp/html-resume)
+2. Clone to your local computer (or download the [zip](https://github.com/BeyondCodeBootcamp/html-resume/archive/refs/heads/main.zip) and dependencies)
+   ```bash
+   git clone --recursive git@github.com:BeyondCodeBootcamp/html-resume.git
+   ```
+3. Preview `html-resume/` in your browser
+   - macOS: `open html-resume/index.html`
+   - Linux: `xdg-open html-resume/index.html`
+   - Windows 10: `start html-resume/index.html`
+
+Use [VS Code](https://code.visualstudio.com) [+ Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+or [vim + Prettier](https://webinstall.dev/vim-essential)
+to edit `index.html` and `style.css` and season to taste.
+
+# Tips
+
+- Printable as US Letter in Portrait mode
+  - (PR for A4 support welcome)
+- Brave, Google Chrome, and Edge
+  - Set **Margin** to **None**
+  - Print **Background Graphics**
+  - Don't print headers and footers
+  - Save as PDF
+- Firefox:
+  - You may eed to remove page margins in **about:config**
+  - Uncheck **Ignore Scaling and Shrink To Fit Page Width**
+  - Check **Print Background Colors**
+  - Clear out the headers and footers
+  - Save as PDF
+
+# Acknowledgements
+
+- [Inspired](https://blogs.purincess.tw/matrixblog/2016/04/typesetting-resume-with-html-and-css/) [by](https://github.com/mnjul/html-resume) Paolo Zupin and [Shih-Wen "Angela" Chen](https://angelachen.design/2014/resume.pdf)
+- Created as a Print-to-PDF HTML document by [Min-Zhong "John" Lu](https://mnjul.net/cv/resume.pdf)
+- Modified by [AJ ONeal](https://coolaj86.com/resume/)
+- This fork maintained as part of Beyond Code Bootcamp
+
+## Dependencies
+
+- **Fonts** (free Google Fonts)
+  - [Open Sans](https://www.google.com/fonts/specimen/Open+Sans)
+  - [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro)
+  - [Source Sans Pro](https://www.google.com/fonts/specimen/Source+Sans+Pro)
+- **Icons**
+  - [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
+- **CSS**
+  - [Normalize.css](https://necolas.github.io/normalize.css/)
+
+# License
+
+Apache-2.0
+
+See [LICENSE](/LICENSE).
