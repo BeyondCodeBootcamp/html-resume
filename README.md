@@ -28,6 +28,8 @@
    - macOS: `open html-resume/index.html`
    - Linux: `xdg-open html-resume/index.html`
    - Windows 10: `start html-resume/index.html`
+4. Copy this `html-resume/` to your web server as `/resume/`
+   - (i.e. your resume should be viewable at https://YOUR-SITE.com/resume/)
 
 Use [VS Code](https://code.visualstudio.com) [+ Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 or [vim + Prettier](https://webinstall.dev/vim-essential)
