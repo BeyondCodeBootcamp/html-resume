@@ -15,6 +15,7 @@
 ## Examples
 
 - [AJ ONeal (html)](https://coolaj86.com/resume/)
+- [John Shaver (html)](https://jshaver.net/resume/)
 - [Min-Zhong "John" Lu (pdf)](https://mnjul.net/cv/resume.pdf)
 
 ## Make Your Own
